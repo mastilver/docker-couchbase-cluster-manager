@@ -4,7 +4,7 @@ const getNextState = require('./getNextState');
 let hostname = process.env.CLUSTER_HOSTNAME;
 const username = process.env.USERNAME || 'Administrator';
 const password = process.env.PASSWORD || 'password';
-const namespace = process.emv.NAMESPACE;
+const namespace = process.env.NAMESPACE;
 
 if (namespace != null) {
     hostname = `${hostname}.${namespace}.svc.cluster.local`;
