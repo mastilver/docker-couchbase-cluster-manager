@@ -31,6 +31,12 @@ Default: `password`
 
 Password used to setup your nodes
 
+### NAMESPACE
+
+Type: `string`
+
+To use when the container is used inside a Kubernetes namespace.
+
 ## License
 
 MIT © [Thomas Sileghem](http://mastilver.com)

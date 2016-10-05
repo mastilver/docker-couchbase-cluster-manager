@@ -1,9 +1,14 @@
 const axios = require('axios');
 const getNextState = require('./getNextState');
 
-const hostname = process.env.CLUSTER_HOSTNAME;
+let hostname = process.env.CLUSTER_HOSTNAME;
 const username = process.env.USERNAME || 'Administrator';
 const password = process.env.PASSWORD || 'password';
+const namespace = process.emv.NAMESPACE;
+
+if (namespace != null) {
+    hostname = `${hostname}.${namespace}.svc.cluster.local`;
+}
 
 let electedNode = null;
 let nodesInCluster = [];
