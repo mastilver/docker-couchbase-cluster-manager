@@ -5,7 +5,7 @@
 ## Usage
 
 ```bash
-docker run mastilver/docker-couchbase-cluster-manager --env CLUSTER_HOSTNAME="couchbase.cluster"
+docker run mastilver/couchbase-cluster-manager --env CLUSTER_HOSTNAME="couchbase.cluster"
 ```
 
 
