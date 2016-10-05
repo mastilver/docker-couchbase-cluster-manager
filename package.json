@@ -1,0 +1,47 @@
+{
+  "name": "docker-couchbase-cluster-manager",
+  "version": "0.0.0",
+  "description": "My striking module",
+  "license": "MIT",
+  "repository": "mastilver/docker-couchbase-cluster-manager",
+  "author": {
+    "name": "Thomas Sileghem",
+    "email": "tsileghem@neworbit.co.uk",
+    "url": "mastilver.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {
+    "axios": "^0.14.0",
+    "pify": "^2.3.0",
+    "yargs": "^6.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "rewire": "^2.5.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 4,
+    "rules": {
+      "no-eq-null": 0,
+      "eqeqeq": [
+        2,
+        "smart"
+      ],
+      "xo/filename-case": 0,
+      "babel/object-curly-spacing": 0
+    }
+  }
+}
