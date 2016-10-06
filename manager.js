@@ -35,9 +35,8 @@ function refreshNodes() {
 
 function addNodeToCluster(electedNode, node) {
     console.log(`adding node: ${node} to ${electedNode}`);
-    return axios.post(`http://${electedNode}:8091/node/controller/doJoinCluster`, {
-        clusterMemberHostIp: node,
-        clusterMemberPort: 8091,
+    return axios.post(`http://${electedNode}:8091/controller/addNode`, {
+        hostname: node,
         user: username,
         password
     }, {
