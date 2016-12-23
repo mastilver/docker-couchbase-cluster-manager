@@ -22,14 +22,14 @@
     ""
   ],
   "dependencies": {
-    "axios": "^0.14.0",
+    "axios": "^0.15.3",
     "pify": "^2.3.0",
     "yargs": "^6.0.0"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.17.0",
     "rewire": "^2.5.2",
-    "xo": "^0.16.0"
+    "xo": "^0.17.1"
   },
   "xo": {
     "esnext": true,
